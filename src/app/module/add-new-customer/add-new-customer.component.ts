@@ -40,4 +40,7 @@ export class AddNewCustomerComponent {
         },
       });
   }
+  onCancel() {
+    this.route.navigate(['/dashboard']);
+  }
 }

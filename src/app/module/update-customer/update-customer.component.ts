@@ -95,4 +95,8 @@ export class UpdateCustomerComponent implements OnInit {
       ? this.datePipe.transform(this.existingCustomer.dateOfBirth, 'YYYY/MM/dd')
       : '';
   }
+
+  onCancel() {
+    this.router.navigate(['/dashboard']);
+  }
 }
