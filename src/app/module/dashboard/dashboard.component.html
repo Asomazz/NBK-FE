@@ -1,5 +1,31 @@
-<div>
-  <button (click)="onLogout()">Logout</button>
+<div class="dashboard-container">
+  <div class="button-container">
+    <button (click)="onLogout()">Logout</button>
+    <button (click)="onAddPressed()">Add Customer</button>
+  </div>
 
-  <button (click)="onAddPressed()">Add customer</button>
+  <table class="customer-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Phone Number</th>
+        <th>Gender</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers" class="customer-row">
+        <td class="customer-name">{{ customer.name }}</td>
+        <td class="customer-dob">
+          {{ customer.dateOfBirth | date : "dd/MM/yyyy" }}
+        </td>
+        <td class="customer-number">{{ customer.number }}</td>
+        <td class="customer-gender">{{ customer.gender }}</td>
+        <td class="customer-actions">
+          <button (click)="onUpdateClick(customer.id)">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

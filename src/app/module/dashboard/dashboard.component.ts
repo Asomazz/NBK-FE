@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   HttpClient,
   HttpClientModule,
@@ -9,11 +10,12 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, CommonModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
 })
 export class DashboardComponent {
+  customers: any = [];
   errorMessage: string = '';
 
   constructor(private route: Router, private http: HttpClient) {}
@@ -28,6 +30,7 @@ export class DashboardComponent {
       .subscribe({
         next: (data) => {
           // store the token
+          this.customers = data;
           console.log(data);
         },
         error: (error) => {
@@ -43,5 +46,8 @@ export class DashboardComponent {
 
   onAddPressed() {
     this.route.navigate(['/add-customer']);
+  }
+  onUpdateClick(id: any) {
+    this.route.navigate([`/update-customer/${id}`]);
   }
 }

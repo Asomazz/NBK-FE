@@ -43,3 +43,50 @@ input[type="password"] {
   border-radius: 4px;
   cursor: pointer;
 }
+
+.login-container {
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 30px;
+  width: 400px; /* Adjust width as needed */
+  margin: 100px auto; /* Center the form horizontally */
+  background-color: #f1f1f1; /* Light background color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 3px; /* Rounded corners */
+  margin-bottom: 15px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-login {
+  background-color: #4caf50; /* Green color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Hand cursor on hover */
+}
+
+.btn-login:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}

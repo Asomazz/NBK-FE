@@ -1,0 +1,56 @@
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+
+<form *ngIf="!errorMessage" #customerForm="ngForm" (ngSubmit)="onSubmit()">
+  <h2>Update Customer</h2>
+  <div class="form-group">
+    <label for="id">ID</label>
+    <input
+      type="text"
+      id="id"
+      name="id"
+      [value]="existingCustomer.id"
+      disabled
+    />
+  </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      [(ngModel)]="existingCustomer.name"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="number">Phone Number</label>
+    <input
+      type="tel"
+      id="number"
+      name="number"
+      [(ngModel)]="existingCustomer.number"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="dob">Date of Birth</label>
+    <input
+      type="date"
+      id="dob"
+      name="dob"
+      [(ngModel)]="existingCustomer.dateOfBirth"
+    />
+    <span *ngIf="existingCustomer.dateOfBirth">{{ formattedDob }}</span>
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" [(ngModel)]="existingCustomer.gender">
+      <option *ngFor="let gender of genders">{{ gender }}</option>
+    </select>
+    <span>{{ existingCustomer.gender }}</span>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Update Customer</button>
+</form>
