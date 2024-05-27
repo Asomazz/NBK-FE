@@ -29,7 +29,6 @@ export class DashboardComponent {
       })
       .subscribe({
         next: (data) => {
-          // store the token
           this.customers = data;
           console.log(data);
         },

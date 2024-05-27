@@ -30,9 +30,8 @@ input[type="password"] {
 }
 
 input[type="password"] {
-  /* Hide password characters with dots */
-  -webkit-text-security: disc; /* For Chrome, Safari, etc. */
-  text-security: disc; /* For IE */
+  -webkit-text-security: disc;
+  text-security: disc;
 }
 
 .btn-login {
@@ -45,12 +44,12 @@ input[type="password"] {
 }
 
 .login-container {
-  border: 1px solid #ddd; /* Light gray border */
+  border: 1px solid #ddd;
   padding: 30px;
-  width: 400px; /* Adjust width as needed */
-  margin: 100px auto; /* Center the form horizontally */
-  background-color: #f1f1f1; /* Light background color */
-  border-radius: 5px; /* Rounded corners */
+  width: 400px;
+  margin: 100px auto;
+  background-color: #f1f1f1;
+  border-radius: 5px;
 }
 
 h2 {
@@ -67,8 +66,8 @@ input[type="text"],
 input[type="password"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc; /* Light gray border */
-  border-radius: 3px; /* Rounded corners */
+  border: 1px solid #ccc;
+  border-radius: 3px;
   margin-bottom: 15px;
 }
 
@@ -79,14 +78,14 @@ input[type="password"] {
 }
 
 .btn-login {
-  background-color: #4caf50; /* Green color */
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  cursor: pointer; /* Hand cursor on hover */
+  cursor: pointer;
 }
 
 .btn-login:hover {
-  background-color: #3e8e41; /* Darker green on hover */
+  background-color: #3e8e41;
 }

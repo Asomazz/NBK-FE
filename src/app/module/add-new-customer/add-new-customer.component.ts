@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Customer, Gender } from './customer.model'; // Import Customer and Gender
+import { Customer, Gender } from './customer.model';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import {
@@ -32,7 +32,6 @@ export class AddNewCustomerComponent {
       })
       .subscribe({
         next: (data) => {
-          // store the token
           this.route.navigate(['/dashboard']);
         },
         error: (error) => {

@@ -3,27 +3,27 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f1f1f1; /* Light background color */
-  border-radius: 5px; /* Rounded corners */
+  background-color: #f1f1f1;
+  border-radius: 5px;
 }
 
 .button-container {
   display: flex;
-  justify-content: space-between; /* Distribute buttons evenly */
-  margin-bottom: 20px; /* Add some space below the buttons */
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .customer-table {
-  border-collapse: collapse; /* Remove gaps between cells */
-  width: 100%; /* Adjust width as needed */
-  background-color: #fff; /* White background color */
-  border-radius: 5px; /* Rounded corners for the table */
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .customer-table th,
 .customer-table td {
-  padding: 10px; /* Padding for table cells */
-  border: 1px solid #ddd; /* Light gray border for cells */
+  padding: 10px;
+  border: 1px solid #ddd;
 }
 
 .customer-row {
@@ -32,18 +32,18 @@
 }
 
 .customer-row:hover {
-  background-color: #f5f5f5; /* Light gray background on hover */
+  background-color: #f5f5f5;
 }
 
 button {
-  background-color: #4caf50; /* Green color */
+  background-color: #4caf50;
   color: white;
-  padding: 5px 10px; /* Adjust padding as needed */
+  padding: 5px 10px;
   border: none;
-  border-radius: 3px; /* Rounded corners for buttons */
-  cursor: pointer; /* Hand cursor on hover */
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #3e8e41; /* Darker green on hover */
+  background-color: #3e8e41;
 }

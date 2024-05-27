@@ -1,11 +1,11 @@
 form {
-  display: flex; /* Arrange elements vertically */
+  display: flex;
   flex-direction: column;
-  width: 400px; /* Adjust width as needed */
-  margin: 0 auto; /* Center the form horizontally */
+  width: 400px;
+  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ddd; /* Light gray border */
-  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 .form-group {
@@ -22,27 +22,27 @@ input[type="tel"],
 input[type="date"] {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc; /* Light gray border */
-  border-radius: 3px; /* Rounded corners */
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc; /* Light gray border */
-  border-radius: 3px; /* Rounded corners */
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }
 
 button {
-  background-color: #4caf50; /* Green color */
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Hand cursor on hover */
+  border-radius: 5px;
+  cursor: pointer;
   margin-top: 10px;
 }
 
 button:hover {
-  background-color: #3e8e41; /* Darker green on hover */
+  background-color: #3e8e41;
 }

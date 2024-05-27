@@ -25,7 +25,6 @@ export class LoginComponent {
       .post<any>('http://localhost:5001/auth/login', loginForm.value)
       .subscribe({
         next: (data) => {
-          // store the token
           localStorage.setItem('token', data.token);
           this.route.navigate(['/dashboard']);
         },

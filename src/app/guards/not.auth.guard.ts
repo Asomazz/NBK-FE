@@ -26,7 +26,7 @@ export class NotAuthGuard implements CanActivate {
     if (!token) {
       return true;
     } else {
-      this.router.navigate(['/dashboard']); // Redirect to login on unauthorized access
+      this.router.navigate(['/dashboard']);
       return false;
     }
   }
